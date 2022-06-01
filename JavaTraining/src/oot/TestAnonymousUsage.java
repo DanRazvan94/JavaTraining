@@ -1,19 +1,57 @@
 /*
- * Testing anonymous classes
+ * Testing anonymous classes usage
  */
-package oop;
+package oot;
 
 /**
- *
+ * Testing anonymous classes usage
  * @author dan_r
  */
 public class TestAnonymousUsage {
-
+	interface SayHello{
+		public void sayHello();
+	}
+	
 	/**
 	 * @param args the command line arguments
 	 */
 	public static void main(String[] args) {
-		// TODO code application logic here
-	}
-	
+		// usage fo classical local class
+		class SayHelloInEnglish implements SayHello{
+
+			@Override
+			public void sayHello() {
+				System.out.println("Hello world!");
+			}
+		
+		}
+		SayHelloInEnglish englishObject = new SayHelloInEnglish();
+		englishObject.sayHello();
+		//  same code using an anonymous class
+		SayHello englishAnonymousObject = new SayHello(){
+			@Override
+			public void sayHello() {
+				System.out.println("Hello world!");
+			}
+		
+		};
+		englishAnonymousObject.sayHello();
+		// use anonymous code for German Language
+		SayHello germanAnonymousObject = new SayHello(){
+			@Override
+			public void sayHello() {
+				System.out.println("Hallo Welt!");
+			}
+		
+		};
+		germanAnonymousObject.sayHello();	
+		// say hello in Romanian
+		SayHello romanianAnonymousObject = new SayHello(){
+			@Override
+			public void sayHello() {
+				System.out.println("Salut lume!");
+			}	
+		};
+		romanianAnonymousObject.sayHello();
+	}			
 }
