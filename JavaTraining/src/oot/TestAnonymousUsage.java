@@ -28,29 +28,18 @@ public class TestAnonymousUsage {
 		SayHelloInEnglish englishObject = new SayHelloInEnglish();
 		englishObject.sayHello();
 		//  same code using an anonymous class
-		SayHello englishAnonymousObject = new SayHello(){
-			@Override
-			public void sayHello() {
-				System.out.println("Hello world!");
-			}
-		
+		SayHello englishAnonymousObject = () -> {
+			System.out.println("Hello world!");
 		};
 		englishAnonymousObject.sayHello();
 		// use anonymous code for German Language
-		SayHello germanAnonymousObject = new SayHello(){
-			@Override
-			public void sayHello() {
-				System.out.println("Hallo Welt!");
-			}
-		
+		SayHello germanAnonymousObject = () -> {
+			System.out.println("Hallo Welt!");
 		};
 		germanAnonymousObject.sayHello();	
 		// say hello in Romanian
-		SayHello romanianAnonymousObject = new SayHello(){
-			@Override
-			public void sayHello() {
-				System.out.println("Salut lume!");
-			}	
+		SayHello romanianAnonymousObject = () -> {
+			System.out.println("Salut lume!");
 		};
 		romanianAnonymousObject.sayHello();
 	}			
