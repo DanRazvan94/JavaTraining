@@ -24,7 +24,7 @@ class DeskComputerButton {
 		KEY_MULTIPLY,
 		KEY_DIVIDE,
 		KEY_EQUAL,
-	};
+	}
 	
 	private ButtonMarkups markup;
 
