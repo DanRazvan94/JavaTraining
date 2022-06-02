@@ -26,7 +26,7 @@ class DeskComputerButton {
 		KEY_EQUAL,
 	};
 	
-	private final ButtonMarkups markup;
+	private ButtonMarkups markup;
 
 	public ButtonMarkups getMarkup() {
 		return markup;
