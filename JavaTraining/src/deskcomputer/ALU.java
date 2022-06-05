@@ -100,7 +100,7 @@ class ALU {
 					case KEY_MULTIPLY: result = firstOperand * secondOperand;
 					break;
 					case KEY_DIVIDE: result = firstOperand/secondOperand;
-					
+					break;
 				}
 			parent.getCd().display(String.valueOf(result));
 			}	

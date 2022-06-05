@@ -37,9 +37,9 @@ class DeskComputer {
 	// method push key 
 	public void pushKey(DeskComputerButton.ButtonMarkups pushedButtonMarkup){
 		
-		for(var currentButton:keyboard){
-			if(currentButton.getMarkup() == pushedButtonMarkup);
-			alu.pushKey(currentButton);
+			for(DeskComputerButton currentButton:keyboard){
+				if(currentButton.getMarkup() == pushedButtonMarkup)
+                alu.pushKey(currentButton);
 		}
 	}
 }
