@@ -8,7 +8,7 @@ package deskcomputer;
  * @author dan_r
  */
 class DeskComputerButton {
-	public static enum ButtonMarkups {
+	public enum ButtonMarkups {
 		KEY_0,
 		KEY_1,
 		KEY_2,
@@ -26,7 +26,7 @@ class DeskComputerButton {
 		KEY_EQUAL,
 	}
 	
-	private ButtonMarkups markup;
+	private final ButtonMarkups markup;
 
 	public ButtonMarkups getMarkup() {
 		return markup;
