@@ -95,7 +95,7 @@ class ALU {
 				switch(operator){
 					case KEY_PLUS: result = firstOperand + secondOperand;
 					break;
-					case KEY_MINUS: result = firstOperand - secondOperand;
+					case KEY_MINUS :result = firstOperand - secondOperand;
 					break;
 					case KEY_MULTIPLY: result = firstOperand * secondOperand;
 					break;
