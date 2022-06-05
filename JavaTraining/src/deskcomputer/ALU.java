@@ -49,13 +49,7 @@ class ALU {
 						parent.getCd().display(temp);
 						firstOperand = Integer.parseInt(temp);
 					}
-					else {
-					String temp = String.valueOf(secondOperand);
-						temp=temp.concat("1");
-						parent.getCd().display(temp);
-						secondOperand = Integer.parseInt(temp);
-					
-					}
+
 				}
 			case KEY_2 -> {
 					if (DeskComputerButton.ButtonMarkups.KEY_2 == operator){
@@ -64,13 +58,7 @@ class ALU {
 						parent.getCd().display(temp);
 						firstOperand = Integer.parseInt(temp);
 					}
-					else {
-					String temp = String.valueOf(secondOperand);
-						temp=temp.concat("2");
-						parent.getCd().display(temp);
-						secondOperand = Integer.parseInt(temp);
-					
-					}
+
 				}
 				case KEY_3 -> {
 					if (DeskComputerButton.ButtonMarkups.KEY_3 == operator){
@@ -79,13 +67,7 @@ class ALU {
 						parent.getCd().display(temp);
 						firstOperand = Integer.parseInt(temp);
 					}
-					else {
-					String temp = String.valueOf(secondOperand);
-						temp=temp.concat("3");
-						parent.getCd().display(temp);
-						secondOperand = Integer.parseInt(temp);
-					
-					}
+
 				}
 				case KEY_4 -> {
 					if (DeskComputerButton.ButtonMarkups.KEY_4 == operator){
@@ -94,13 +76,7 @@ class ALU {
 						parent.getCd().display(temp);
 						firstOperand = Integer.parseInt(temp);
 					}
-					else {
-					String temp = String.valueOf(secondOperand);
-						temp=temp.concat("4");
-						parent.getCd().display(temp);
-						secondOperand = Integer.parseInt(temp);
-					
-					}
+
 				}
 				case KEY_9 -> {
 					if (DeskComputerButton.ButtonMarkups.KEY_9 == operator){
@@ -109,13 +85,7 @@ class ALU {
 						parent.getCd().display(temp);
 						firstOperand = Integer.parseInt(temp);
 					}
-					else {
-					String temp = String.valueOf(secondOperand);
-						temp=temp.concat("9");
-						parent.getCd().display(temp);
-						secondOperand = Integer.parseInt(temp);
-					
-					}
+
 				}
 			case KEY_PLUS -> {
 				operator = DeskComputerButton.ButtonMarkups.KEY_PLUS;
@@ -123,10 +93,13 @@ class ALU {
 			}
 			case KEY_EQUAL -> {
 				switch(operator){
-					case KEY_PLUS -> result = firstOperand + secondOperand;
-					case KEY_MINUS -> result = firstOperand - secondOperand;
-					case KEY_MULTIPLY -> result = firstOperand * secondOperand;
-					case KEY_DIVIDE -> result = firstOperand/secondOperand;
+					case KEY_PLUS: result = firstOperand + secondOperand;
+					break;
+					case KEY_MINUS: result = firstOperand - secondOperand;
+					break;
+					case KEY_MULTIPLY: result = firstOperand * secondOperand;
+					break;
+					case KEY_DIVIDE: result = firstOperand/secondOperand;
 					
 				}
 			parent.getCd().display(String.valueOf(result));
