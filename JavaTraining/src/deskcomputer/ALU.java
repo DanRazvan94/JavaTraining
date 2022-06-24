@@ -134,7 +134,7 @@ class ALU {
                     break;
                     case KEY_MINUS: result = firstOperand - secondOperand;
                     break;
-                    case KEY_MULTIPLY: result = firstOperand *secondOperand;
+                    case KEY_MULTIPLY: result = firstOperand * secondOperand;
                     break;
                     case KEY_DIVIDE: result = firstOperand/secondOperand;
                     break;
